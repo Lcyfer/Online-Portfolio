@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Rubik+Doodle+Triangles&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="lm.png">
+    <link rel="stylesheet" href="style(0).css">
+
+
+    <title>Portfolio</title>
+
+</head>
+<body>
+  <header>
+       
+      <span class="logo"><img src="lm.png"></span>
+        <div class="containers">&#9746</div>
+        <div class="container">&#9776</div>
+  <nav class="nav">
+
+    <ul>
+      <li><a class="active"href="#sec1" >Home</a></li>
+      <li><a href="#sec2">About</a></li>
+      <li><a href="#sec3">Work</a></li>
+      <li><a href="#sec4">Contact</a></li>
+    </ul>
+   
+</header>
+<section id="sec1">
+  <div class="porth">
+    <h1 id="welc">Welcome to </h1>
+  </div>
+  <div class="porth">
+    <p id="txt1">I'm delighted to have you visit my portfolio. Here, you'll find a curated collection of my work, showcasing my skills, expertise, and passion for <span style="color:red; animation:fade 3s;">Web Devoloping</span>  Whether you're an Student, a professional Programmer, or simply someone interested in what I do, I invite you to explore and get a glimpse into my professional journey. From design projects to creative endeavors, I aim to demonstrate not just what I've accomplished, but also the dedication and innovation I bring to each endeavor. Thank you for stopping by, and I hope you enjoy browsing through my portfolio as much as I've enjoyed creating it. Let's connect and explore possibilities together! 
+    </p>
+  </div>
+  <img id="img1"src="2.png">
+  
+</section>
+<section id="sec2">
+  
+    <h1 class="s2">About</h1>
+    <img id="img2"src="3.jpg">
+    <h2>
+        Hello there! I'm 
+    </h2>
+     <div class="porth1">
+      <p>
+        A dedicated student on a mission to carve a path in the captivating world of web development.
+        With a passion for problem-solving and a love for creative expression,
+        I am committed to mastering the art and science of building captivating digital experiences.
+        </p>
+        
+        
+        <p>
+          Throughout my educational journey,
+          I have eagerly delved into the intricacies of web development,
+          from mastering front-end technologies like HTML, CSS, and JavaScript,
+          to diving into back-end frameworks such as Node.js and Django.
+          Each line of code I write is a step closer to realizing my vision of crafting seamless, user-centric web solutions.
+          </p>
+
+          <p>
+            This portfolio is a reflection of my journey, showcasing a curated collection of projects that demonstrate my skills, creativity, 
+            and dedication to the craft. From responsive websites to dynamic web applications, each project represents a milestone in my evolution as a web developer.
+
+             
+    </p>
+     </div>
+     <div class="v2">
+      <span class="btn"><a href="https://lcyfer.github.io/online-resume/">
+      View Resume
+      </a>
+      </span>
+      <span class="btn"><a href="#sec4">
+        Contact Me!
+      </a>
+      </span>
+    </div>
+   
+</section>
+ <section id="sec3">
+    <h1 class="s2"><a href="https://github.com/Lcyfer?tab=repositories">Work</a></h1>
+    <h2>Temporary Unavailable!</h2>
+    <h2><a href="https://github.com/Lcyfer?tab=repositories">My Works</a></h2>
+    
+ </section>
+ <section id="sec4">
+
+ 
+ <form class="feedb">
+ <h1 class="s2">Contact</h1>
+   
+    <div class='full-input'><label for='name'>Name</label>
+  <input type='text' name='name'></input></div>
+
+<div class='full-input'><label for='email'>Email</label>
+  <input type='text' name='email'></input></div>
+
+<div class='full-input'>
+  <textarea rows="7"cols="35" name="comment" form="feedb" class="comment" >Comment here your experience!</textarea>
+    <input type="submit" class="submit"  ></div>
+  <div class="fors">
+      
+      <a href="tel:63950-234-2813"class="v3"><img src="phone-call.png" class="icon2"></a>
+      <a href="https://www.google.com/maps/@13.9056105,121.6189218,3a,75y,292.72h,90t/data=!3m5!1e1!3m3!1s5mDstj7K5PVulV6YDRmTEw!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3D5mDstj7K5PVulV6YDRmTEw%26cb_client%3Dsearch.gws-prod.gps%26w%3D86%26h%3D86%26yaw%3D292.71506%26pitch%3D0%26thumbfov%3D100?entry=ttu"class="v3"><img src="home.png" class="icon2"></a>
+      <a href="mailto:lonardmoreno0@gmail.com"class="v3"><img src="email.png" class="icon2"></a>
+      <a href="https://www.facebook.com/EXIA.31"class="v3"><img src="facebook.png" class="icon2"></a>
+      <a href="https://www.instagram.com/lonardmoreno?igsh=bTZzMWtqcm9iajB2"class="v3"><img src="instagram.png"class="icon2"></a>
+    </div>
+    
+      
+    </form>
+        
+   </div>
+ </section>
+ <footer>
+   <h3> Copyright © 2024| All Right Reserved</h3>
+   <h4>Developed by </h4>
+ </footer>
+<script>
+let container = document.querySelector(".container");
+let containers = document.querySelector(".containers");
+
+container.addEventListener("click",open);
+function open(){
+let nav = document.querySelector(".nav");
+    nav.style.height="350px";
+    document.querySelector("ul").style.opacity=1;
+    container.style.display="none";
+    containers.style.display="block";
+}
+containers.addEventListener("click",close);
+ 
+function close(){
+let nav = document.querySelector(".nav");
+    nav.style.height="0px";
+    document.querySelector("ul").style.opacity=0;
+    container.style.display="block";
+    containers.style.display="none";
+}
+
+
+/*scroll*/
+function handleScroll() {
+ let header= document.querySelector("header");
+    if (window.scrollY > 0) {
+        header.style.backgroundColor="#01012b";
+        // add any additional code you want to execute when the user scrolls past the top of the page
+    } else {
+        header.style.backgroundColor="transparent";
+        // add any additional code you want to execute when the user is at the top of the page
+    }
+}
+
+window.onscroll = function(event) {
+    handleScroll();
+};
+  </script>
+ 
+  
+</body>
+</html>
+  
