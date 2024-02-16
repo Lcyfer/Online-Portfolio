@@ -110,7 +110,7 @@ transition: 3s ease-in-out;
 /*about*/
 #sec2{
   width:100%;
-  padding: 30px;
+  padding: 20px;
  background-color: #01012b;
 }
 
@@ -154,8 +154,7 @@ transition: 3s ease-in-out;
 }
 .v2{
   width: 100%;
-  padding: 30px;
-  
+  text-align: center;
 }
 
 
@@ -164,13 +163,12 @@ transition: 3s ease-in-out;
 .btn {
   background-color: white;
   
-  height: 80px;
+  height: 50px;
   padding: 10px;
   margin: 5px;
   border: 1px solid #ff2a6d;
   border-radius: 10px;
-  position: relative;
-  left: 35%;
+  
   
 }
 .btn a{
@@ -273,6 +271,7 @@ footer{
 footer h3,h4{
   font-family: Orbitron;
   text-align: center;
+  font-size: 10px;
 }
 footer h4::after{
   content: "Lonard Moreno";
