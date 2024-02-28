@@ -86,9 +86,77 @@
 </section>
  <section id="sec3">
     <h1 class="s2"><a href="https://github.com/Lcyfer?tab=repositories">Work</a></h1>
-    <h2>Temporary Unavailable!</h2>
-    <h2><a href="https://github.com/Lcyfer?tab=repositories">My Works</a></h2>
-    
+    <div id="contain2">
+      <div class="box" id="0" style="background-image:url(a1.jpg);">
+         <div class="box1">
+           <a href="https://lcyfer.github.io/online-resume/
+           ">Visit</a>
+         </div>
+         <div class="box2">
+           <a href="https://github.com/Lcyfer/online-resume">Resources</a>
+         </div>
+         
+        
+      </div>
+      <div class="box" id="1" style="background-image:url(a2.jpg)">
+          <div class="box1">
+           <a href="https://lcyfer.github.io/Working-Calculator/
+           ">Visit</a>
+         </div>
+         <div class="box2">
+           <a href="https://github.com/Lcyfer/Working-Calculator
+           ">Resources</a>
+         </div>
+      </div>
+      <div class="box" id="2" style="background-image:url(a3.jpg);">
+          <div class="box1">
+           <a href="https://lcyfer.github.io/To_do_list/
+           ">Visit</a>
+         </div>
+         <div class="box2">
+           <a href="https://github.com/Lcyfer/To_do_list
+           ">Resources</a>
+         </div>
+        
+      </div>
+      <div class="box" id="3" style="background-image:url(a4.jpg);">
+          <div class="box1">
+           <a href="https://lcyfer.github.io/Responsive/
+           ">Visit</a>
+         </div>
+         <div class="box2">
+           <a href="https://github.com/Lcyfer/Responsive
+           ">Resources</a>
+         </div>
+        
+      </div>
+      <div class="box" id="4" style="background-image:url(a5.jpg);">
+          <div class="box1">
+           <a href="https://github.com/Lcyfer/JavaScript-colorChanger-Hands-On
+           ">Visit</a>
+         </div>
+         <div class="box2">
+           <a href="https://github.com/Lcyfer/JavaScript-colorChanger-Hands-On
+           ">Resources</a>
+         </div>
+        
+      </div>
+      <div class="box" id="5" style="background-image:url(a6.jpg);">
+          <div class="box1">
+           <a href="https://lcyfer.github.io/HandsOn1-addEventListener-WS101/
+           ">Visit</a>
+         </div>
+         <div class="box2">
+           <a href="https://github.com/Lcyfer/HandsOn1-addEventListener-WS101
+           ">Resources</a>
+         </div>
+        
+      </div>
+      
+    </div>
+    <div id="prev"><a id="prev1" href=""><</a></div>
+    <div id="next"><a id="next1"href="">></a></div>
+  
  </section>
  <section id="sec4">
 
@@ -158,9 +226,60 @@ function handleScroll() {
     }
 }
 
+let boxes = document.querySelectorAll(".box");
+let box1s = document.querySelectorAll(".box1");
+let box2s = document.querySelectorAll(".box2");
+
+boxes.forEach(box => {
+  box.addEventListener("mouseover", hvr);
+  box.addEventListener("mouseout", reset);
+});
+
+function hvr() {
+  box1s.forEach(box1 => {
+    box1.style.display = "inline-block";
+  });
+  box2s.forEach(box2 => {
+    box2.style.display = "inline-block";
+  });
+}
+
+function reset() {
+  box1s.forEach(box1 => {
+    box1.style.display = "none";
+  });
+  box2s.forEach(box2 => {
+    box2.style.display = "none";
+  });
+}
+
 window.onscroll = function(event) {
     handleScroll();
 };
+/*slider*/
+let array = ["#0", "#1", "#2","#3","#4","#5"];
+let index = array.length;
+let next=document.getElementById("next");
+next.addEventListener('click', function() {
+  index = (index +1) % array.length;
+  let value = array[index];
+  console.log(value);
+  document.getElementById("next1").href=value;
+});
+ 
+ 
+
+let prev=document.getElementById("prev");
+prev.addEventListener('click', function() {
+  index = (index - 1+array.length) % array.length;
+  let value = array[index];
+  console.log(value);
+  document.getElementById("prev1").href=value;
+});
+
+
+ 
+
   </script>
  
   
