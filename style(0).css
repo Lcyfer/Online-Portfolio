@@ -241,7 +241,7 @@ top: 50px;
 
 .box1,.box2{
   background: transparent;
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(5px);
   display: none;
   padding: 10px;
   margin: 10px;
